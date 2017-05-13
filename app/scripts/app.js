@@ -31,7 +31,7 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
-      .when('/current', {
+      .when('/current/:cityID', {
         templateUrl: 'views/current.html',
         controller: 'CurrentCtrl',
         controllerAs: 'current'
