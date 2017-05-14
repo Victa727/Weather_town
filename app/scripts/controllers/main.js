@@ -8,7 +8,9 @@
  * Controller of the weatherTownApp
  */
 angular.module('weatherTownApp')
-.controller('MainCtrl', function ($scope, citysearch) {
+.controller('MainCtrl', function ($scope, citysearch, $localStorage)  {
+
+    $scope.storage = $localStorage;
     $scope.citiesFound = citysearch.find();
 
     $scope.findCities = function(){
