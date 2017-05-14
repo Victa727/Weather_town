@@ -8,16 +8,19 @@
  * Factory in the weatherTownApp.
  */
 angular.module('weatherTownApp')
-  .factory('forecast', function () {
+  .factory('forecast', function ($resource) {
     // Service logic
     // ...
 
-    var meaningOfLife = 42;
 
     // Public API here
-    return {
-      someMethod: function () {
-        return meaningOfLife;
+    return $resource('http://api.openweathermap.org/data/2.5/forecast/daily?id=:cityID&cnt=16&units=imperial&APPID=f871cb1a287c72d24f93963850b0e09e', {}, {
+      query: {
+        method:'GET',
+        params:{
+          cityID: '4717560' // Paris, France ID
+        },
+        isArray:false
       }
-    };
+    });
   });
