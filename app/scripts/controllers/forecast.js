@@ -9,15 +9,9 @@
  */
 angular.module('weatherTownApp')
 .controller('ForecastCtrl', function ($scope, $routeParams, forecast) {
-  $scope.cityID = $routeParams.cityID;
+      $scope.cityID = $routeParams.cityID;
 
-  $scope.forecastData = forecast.query({
-      cityID: $routeParams.cityID
-  });
-
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+      $scope.forecastData = forecast.query({
+          cityID: $routeParams.cityID
+      });
+    });

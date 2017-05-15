@@ -17,7 +17,7 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngStorage', // added to enable localStorage features
+    'ngStorage',
     'ngTouch'
   ])
   .config(function ($routeProvider) {
@@ -38,10 +38,10 @@ angular
         controllerAs: 'current'
       })
       .when('/forecast/:cityID', {
-        templateUrl: 'views/forecast.html',
-        controller: 'ForecastCtrl',
-        controllerAs: 'forecast'
-      })
+    templateUrl: 'views/forecast.html',
+    controller: 'ForecastCtrl',
+    controllerAs: 'forecast'
+    })
       .otherwise({
         redirectTo: '/'
       });
