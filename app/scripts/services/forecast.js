@@ -13,7 +13,7 @@ angular.module('weatherTownApp')
     // ...
 
     // Public API here
-    return $resource('http://api.openweathermap.org/data/2.5/forecast/daily?id=:cityID&cnt=16&units=imperial&APPID=f871cb1a287c72d24f93963850b0e09e', {}, {
+    return $resource('http://api.openweathermap.org/data/2.5/forecast/daily?id=:cityID&cnt=12&units=imperial&APPID=f871cb1a287c72d24f93963850b0e09e', {}, {
       query: {
         method:'GET',
         params:{
