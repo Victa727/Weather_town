@@ -1,10 +1,14 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+
+// Override Bootstrap variables
+@import "variables";
+
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
-// @import "content";
-// @import "buttons";
+//@import "content";
+@import "buttons";
 @import "transitions";
 
 .browsehappy {
@@ -16,6 +20,8 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 body {
   padding: 0;
+  background-color: transparent;
+  background-image: url("../images/shiningcity.jpg");
 }
 
 .citylist {
@@ -24,6 +30,7 @@ body {
 .saved-cities-list {
   list-style: none;
 }
+
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
@@ -100,13 +107,13 @@ body {
     border-bottom: 0;
   }
 }
-///Custom Styling - 16 Day Forecast///
+///Custom Styling - 12 Day Forecast///
 
 dl.weather-forecast.ng-scope {
   background-color: #81A094;
   max-width: auto;
-  padding: 15px;
-  margin: 10px;
-  float: left;
+  padding: 10px;
+  margin: 20px;
+  float: center;
 }
-///END - Custom Styling - 16 Day Forecast///
+///END - Custom Styling - 12 Day Forecast///

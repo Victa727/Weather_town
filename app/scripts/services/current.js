@@ -7,6 +7,7 @@
  * # current
  * Factory in the weatherTownApp.
  */
+ 
 angular.module('weatherTownApp')
 .factory('current', function ($resource) {
       // Service logic
