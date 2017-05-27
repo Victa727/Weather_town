@@ -69,7 +69,10 @@ body {
 
 /* Main marketing message and sign up button */
 .jumbotron {
-  text-align: center; 
+  background-color: rgb(255,255,255);
+  background-color: rgba(255,255,255, 0.5);
+  color: inherit;
+  text-align: center;
   border-bottom: 1px solid #e5e5e5;
 
 
@@ -114,9 +117,9 @@ body {
 
 dl.weather-forecast.ng-scope {
   background-color: #81A094;
-  max-width: auto;
+  max-width: 500px;
   padding: 10px;
-  margin: 20px;
+  margin: 50px;
   float: center;
 }
 ///END - Custom Styling - 12 Day Forecast///
