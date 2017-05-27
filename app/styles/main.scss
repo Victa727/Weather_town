@@ -113,6 +113,24 @@ body {
     border-bottom: 0;
   }
 }
+
+/// Image in about///
+/* .about {
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 2px 2px 2px #888888;
+}
+
+.about p {
+  height: 130px;
+  margin: 10px;
+}
+
+.about img {
+  float: center;
+}   */
+
+/// end about section ///
 ///Custom Styling - 12 Day Forecast///
 
 dl.weather-forecast.ng-scope {
@@ -121,5 +139,5 @@ dl.weather-forecast.ng-scope {
   padding: 10px;
   margin: 50px;
   float: center;
-}
+};
 ///END - Custom Styling - 12 Day Forecast///
